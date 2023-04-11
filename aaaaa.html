@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin: 250px 0 0 600px;
+            width: 300px;
+            height: 40px;
+            border-radius: 50px;
+            background-color: rgb(50, 50, 201);
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="ok()">so'z yoki son kiritish uchun bosing</button>
+
+    <script>
+        function ok() {
+            let res = prompt("Iltimos, so'z yoki son kiriting:");
+            if (!isNaN(res)) {
+                alert("Number ");
+            } else {
+                alert("String");
+            }
+
+        }
+    </script>
+</body>
+
+</html>
