@@ -7,20 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        button{
-          margin: 40vh 0 0 85vh ;
-          width: 250px;
-          height: 40px;
-          border-radius: 50px;
-          border: none;
-          font-size: 15px;
-          background-color: #4141f6;
-          color: white;
+        button {
+            margin: 40vh 0 0 85vh;
+            width: 250px;
+            height: 40px;
+            border-radius: 50px;
+            border: none;
+            font-size: 15px;
+            background-color: #4141f6;
+            color: white;
 
 
         }
 
-        button:hover{
+        button:hover {
             background-color: rgb(144, 217, 71);
             color: #4141f6;
             cursor: pointer;
@@ -33,14 +33,17 @@
 
     <script>
         function res() {
-            let res = prompt("Ismingizni kiriting");
+            let res = Number(prompt("Ismingizni kiriting"));
 
             if (res) {
-                alert("To'g'ri");
-            } else {
-                alert("Siz isim kiritmadingiz!");
+                return alert("Noto'g'ri")
             }
-        }
+
+            else if (String(res)) {
+                return alert("To'g'ri");
+            }
+
+               }
 
     </script>
 </body>
